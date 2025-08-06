@@ -11,7 +11,7 @@ class LoginPage extends StatefulWidget {
 
 class _LoginPageState extends State<LoginPage> {
   //day  1
-  String statusLogin = "";
+  String statusLogin = "Login status";
   TextEditingController txtUsername = TextEditingController();
   TextEditingController txtPassword = TextEditingController();
 
@@ -35,7 +35,6 @@ class _LoginPageState extends State<LoginPage> {
               ),
             ),
 
-            
             //gambar
             Center(
               child: Container(
