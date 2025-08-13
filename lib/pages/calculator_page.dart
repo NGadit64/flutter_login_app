@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:tes_flutter/controllers/calculator_controller.dart';
+import 'package:tes_flutter/routes/routes.dart';
 import 'package:tes_flutter/widget/widget_button.dart';
 import 'package:tes_flutter/widget/widget_textfield.dart';
 
@@ -78,6 +79,13 @@ class CalculatorPage extends StatelessWidget {
               textColor: Colors.green,
               onPressed: () {
                 calculatorController.clear();
+              },
+            ),
+            CustomButton(
+              text: "Main Menu",
+              textColor: Colors.green,
+              onPressed: () {
+                Get.toNamed(AppRoutes.footballPage);
               },
             ),
           ],
