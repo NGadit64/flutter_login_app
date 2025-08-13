@@ -23,9 +23,18 @@ class FootballPlayer extends StatelessWidget {
               var player = footballPlayerController.players[index];
               return ListTile(
                 onTap: () {
-                //  print ("player clicked" + footballPlayerController.players[index]);
-                  Get.toNamed(AppRoutes.editPlayerPage, arguments: {'index': index});
+                  //  print ("player clicked" + footballPlayerController.players[index]);
+                  Get.toNamed(
+                    AppRoutes.editPlayerPage,
+                    arguments: {'index': index},
+                  );
                 },
+                leading: CircleAvatar(
+                  backgroundImage: AssetImage(
+                    footballPlayerController.players[index].image,
+                  ),
+                  radius: 30,
+                ),
                 title: Text(player.name),
                 subtitle: Text("${player.position} • ${player.number}"),
               );
