@@ -4,7 +4,7 @@ import '../controllers/edit_player_controller.dart';
 import 'package:tes_flutter/widget/widget_button.dart';
 import 'package:tes_flutter/widget/widget_textfield.dart';
 
-class EditPlayerPage extends StatelessWidget {
+class EditPlayerPage extends StatelessWidget  {
   EditPlayerPage({super.key});
 
   final controller = Get.put(EditPlayerController());
@@ -12,7 +12,6 @@ class EditPlayerPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Edit Player")),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(

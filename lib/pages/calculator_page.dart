@@ -15,7 +15,6 @@ class CalculatorPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("My Calculator")),
       body: Container(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -36,14 +35,14 @@ class CalculatorPage extends StatelessWidget {
                 children: [
                   CustomButton(
                     text: "+",
-                    textColor: Colors.blue,
+                    textColor: const Color.fromARGB(255, 0, 0, 0),
                     onPressed: () {
                       calculatorController.tambah();
                     },
                   ),
                   CustomButton(
                     text: "-",
-                    textColor: Colors.blue,
+                    textColor: const Color.fromARGB(255, 0, 0, 0),
                     onPressed: () {
                       calculatorController.kurang();
                     },
@@ -57,14 +56,14 @@ class CalculatorPage extends StatelessWidget {
                 children: [
                   CustomButton(
                     text: "X",
-                    textColor: Colors.blue,
+                    textColor: const Color.fromARGB(255, 0, 0, 0),
                     onPressed: () {
                       calculatorController.kali();
                     },
                   ),
                   CustomButton(
                     text: "/",
-                    textColor: Colors.blue,
+                    textColor: const Color.fromARGB(255, 0, 0, 0),
                     onPressed: () {
                       calculatorController.bagi();
                     },
@@ -85,7 +84,7 @@ class CalculatorPage extends StatelessWidget {
               text: "Main Menu",
               textColor: Colors.green,
               onPressed: () {
-                Get.toNamed(AppRoutes.footballPage);
+                Get.toNamed(AppRoutes.mainMenuPage);
               },
             ),
           ],

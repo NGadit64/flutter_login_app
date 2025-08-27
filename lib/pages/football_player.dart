@@ -13,7 +13,6 @@ class FootballPlayer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Real Madrid player")),
       body: Container(
         margin: EdgeInsets.all(10),
         child: Obx(
@@ -23,7 +22,7 @@ class FootballPlayer extends StatelessWidget {
               var player = footballPlayerController.players[index];
               return ListTile(
                 onTap: () {
-                  //  print ("player clicked" + footballPlayerController.players[index]);
+                // print("player clicked  " + footballPlayerController.players[index]);
                   Get.toNamed(
                     AppRoutes.editPlayerPage,
                     arguments: {'index': index},
