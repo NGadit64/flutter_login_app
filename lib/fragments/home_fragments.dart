@@ -6,6 +6,6 @@ class HomeFragment extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CalculatorPage(); // langsung load kalkulator
+    return CalculatorPage();
   }
 }

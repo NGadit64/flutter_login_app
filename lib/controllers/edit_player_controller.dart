@@ -10,11 +10,10 @@ class EditPlayerController extends GetxController {
 
   late int playerIndex;
   final footballController =
-      Get.find<FootballPlayerController>(); //calling dari class lain
-
+      Get.find<FootballPlayerController>();
+      
   @override
   void onInit() {
-    //implemen oninit
     super.onInit();
 
     var args = Get.arguments as Map<String, dynamic>;

@@ -6,6 +6,6 @@ class ProfileFragment extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ProfilePage(); // langsung load profile
+    return ProfilePage();
   }
 }

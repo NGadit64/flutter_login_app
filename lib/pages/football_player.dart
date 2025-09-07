@@ -22,10 +22,9 @@ class FootballPlayer extends StatelessWidget {
               var player = footballPlayerController.players[index];
               return ListTile(
                 onTap: () {
-                // print("player clicked  " + footballPlayerController.players[index]);
+                //print("player clicked  " + footballPlayerController.players[index]);
                   Get.toNamed(
-                    AppRoutes.editPlayerPage,
-                    arguments: {'index': index},
+                    AppRoutes.editPlayerPage, arguments: {'index': index},
                   );
                 },
                 leading: CircleAvatar(

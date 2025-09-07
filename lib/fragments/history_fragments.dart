@@ -6,6 +6,6 @@ class HistoryFragment extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return FootballPlayer(); // langsung load football list
+    return FootballPlayer(); 
   }
 }
