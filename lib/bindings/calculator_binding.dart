@@ -5,7 +5,7 @@ class CalculatorBinding extends Bindings{
   @override
   void dependencies() {
     // TODO: implement dependencies
-    //Get.put(CalculatorController());
+  //  Get.put(CalculatorController());
   }
   
 

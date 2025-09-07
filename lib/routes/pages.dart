@@ -10,6 +10,8 @@ class AppPages {
   static final pages = [
     GetPage(name: AppRoutes.mainMenuPage, page: ()=> MainmenuPage(), binding: MainmenuBinding()),
     GetPage(name: AppRoutes.editPlayerPage, page: () => EditPlayerPage()),
-    GetPage(name: AppRoutes.calculatorPage, page: () => CalculatorPage()),
+    GetPage(name: AppRoutes.calculatorPage, page: () => CalculatorPage(),
+     //binding: CalculatorBinding(),
+     ),
   ];
 }
