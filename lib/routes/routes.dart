@@ -6,4 +6,5 @@ class AppRoutes {
   static const String mainMenuPage = "/mainMenuPage";
   static const String SplashscreenPage = "/SplashscreenPage";
   static const String loginPage = "/loginPage";
+  static const String contactPage = "/contactPage";
 }

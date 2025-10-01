@@ -9,7 +9,7 @@ class FootballPlayer extends StatelessWidget {
   final FootballPlayerController footballPlayerController = Get.put(
     FootballPlayerController(),
   );
-
+//no variable object dialog
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -15,10 +15,12 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 150, 127, 190)),
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: const Color.fromARGB(255, 150, 127, 190),
+        ),
         useMaterial3: true,
       ),
-      initialRoute: AppRoutes.SplashscreenPage, //penting
+      initialRoute: AppRoutes.contactPage, //penting
       getPages: AppPages.pages,
     );
   }
