@@ -41,7 +41,7 @@ class ContactPage extends StatelessWidget {
                   return const Center(
                     child: Text("Belum ada kontak"),
                   );
-                }
+                }//
                 return ListView.builder(
                   itemCount: controller.contacts.length,
                   itemBuilder: (context, index) {

@@ -19,7 +19,7 @@ class ContactController extends GetxController {
   }
 
   Future<void> addName() async {
-    final text = nameController.text.trim();
+    final text = nameController.text.trim();//lll
     if (text.isEmpty) return;
     await _dbHelper.insertName(text);
     nameController.clear();

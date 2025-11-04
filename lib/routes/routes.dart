@@ -7,4 +7,9 @@ class AppRoutes {
   static const String SplashscreenPage = "/SplashscreenPage";
   static const String loginPage = "/loginPage";
   static const String contactPage = "/contactPage";
+  static const String examplePage = "/examplePage";
+  static const String exampleTablet = "/exampleTablet";
+  static const String exampleMobile = "/exampleMobile";
+  static const String loginApiPage = "/loginApiPage";
+  static const String homePage = "/homePage";
 }

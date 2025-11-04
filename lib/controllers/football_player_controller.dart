@@ -15,4 +15,7 @@ class FootballPlayerController extends GetxController {
     players[index].number = number;
     players.refresh();
   }
+
+
+
 }
