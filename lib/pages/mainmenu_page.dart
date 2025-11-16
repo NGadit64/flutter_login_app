@@ -32,6 +32,10 @@ class MainmenuPage extends StatelessWidget {
               icon: Icon(Icons.person_2_outlined),
               label: "Profile",
             ),
+            //   BottomNavigationBarItem(
+            //   icon: Icon(Icons.notification_add_outlined),
+            //   label: "Notif",
+            // ),
           ],
         ),
       ),

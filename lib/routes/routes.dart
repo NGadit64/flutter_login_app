@@ -11,5 +11,7 @@ class AppRoutes {
   static const String exampleTablet = "/exampleTablet";
   static const String exampleMobile = "/exampleMobile";
   static const String loginApiPage = "/loginApiPage";
+  static const String tablePremierePage = "/tablePremierePage";
   static const String homePage = "/homePage";
+  static const String loginGoogle = "/loginGoogle";
 }
