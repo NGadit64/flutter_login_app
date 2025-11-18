@@ -19,7 +19,7 @@ class LoginPage extends StatelessWidget {
         child: Container(
           margin: EdgeInsets.all(10),
           child: Column(
-            children: [
+              children: [
               CustomTextfield(
                 label: "username",
                 labelColor: Colors.black,

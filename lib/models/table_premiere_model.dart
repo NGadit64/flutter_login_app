@@ -111,29 +111,3 @@ class Table {
         "dateUpdated": dateUpdated.toIso8601String(),
       };
 }
-
-// To parse this JSON data, do
-
-//     final tablePremiereModel = tablePremiereModelFromJson(jsonString);
-
-// import 'dart:convert';
-
-// TablePremiereModel tablePremiereModelFromJson(String str) => TablePremiereModel.fromJson(json.decode(str));
-
-// String tablePremiereModelToJson(TablePremiereModel data) => json.encode(data.toJson());
-
-// class TablePremiereModel {
-//     List<Map<String, String?>> teams;
-
-//     TablePremiereModel({
-//         required this.teams,
-//     });
-
-//     factory TablePremiereModel.fromJson(Map<String, dynamic> json) => TablePremiereModel(
-//         teams: List<Map<String, String?>>.from(json["teams"].map((x) => Map.from(x).map((k, v) => MapEntry<String, String?>(k, v)))),
-//     );
-
-//     Map<String, dynamic> toJson() => {
-//         "teams": List<dynamic>.from(teams.map((x) => Map.from(x).map((k, v) => MapEntry<String, dynamic>(k, v)))),
-//     };
-// }

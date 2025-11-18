@@ -11,12 +11,24 @@ class SplashscreenController extends GetxController {
   }
 
   checklogin() async {
-    await Future.delayed(Duration(seconds: 3));
+    await Future.delayed(const Duration(seconds: 2));
     final prefs = await SharedPreferences.getInstance();
-    if (prefs.getString("username") != null) {
+    String? token = prefs.getString("token");
+
+    if (token != null && token.isNotEmpty) {
       Get.offAllNamed(AppRoutes.mainMenuPage);
     } else {
       Get.offAllNamed(AppRoutes.loginApiPage);
     }
   }
 }
+
+  // checklogin() async {
+  //   await Future.delayed(Duration(seconds: 3));
+  //   final prefs = await SharedPreferences.getInstance();
+  //   if (prefs.getString("username") != null) {
+  //     Get.offAllNamed(AppRoutes.mainMenuPage);
+  //   } else {
+  //     Get.offAllNamed(AppRoutes.loginApiPage);
+  //   }
+  // }

@@ -32,12 +32,19 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
+
+  bottomNavigationBarTheme: const BottomNavigationBarThemeData( //warna
+    backgroundColor: Colors.white,
+    selectedItemColor: Colors.blue,
+    unselectedItemColor: Colors.grey,
+  ),
+
         colorScheme: ColorScheme.fromSeed(
           seedColor: const Color.fromARGB(255, 150, 127, 190),
         ),
         useMaterial3: true,
       ),
-      initialRoute: AppRoutes.loginGoogle, // langsung ke login
+      initialRoute: AppRoutes.tablePremierePage, // langsung ke login
       getPages: AppPages.pages,
     );
   }

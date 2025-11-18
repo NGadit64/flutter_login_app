@@ -16,28 +16,34 @@ class MainmenuPage extends StatelessWidget {
       () => Scaffold(
         appBar: AppBar(title: Text("My Menu Example")),
         body: mainmenuController.pages[mainmenuController.selectedIndex.value],
-        bottomNavigationBar: BottomNavigationBar(
-          onTap: mainmenuController.changePage,
-          currentIndex: mainmenuController.selectedIndex.value,
-          items: const [
-            BottomNavigationBarItem(
-              icon: Icon(Icons.home_outlined),
-              label: "Home",
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.history),
-              label: "History",
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.person_2_outlined),
-              label: "Profile",
-            ),
-            //   BottomNavigationBarItem(
-            //   icon: Icon(Icons.notification_add_outlined),
-            //   label: "Notif",
-            // ),
-          ],
-        ),
+bottomNavigationBar: BottomNavigationBar(
+  
+  onTap: mainmenuController.changePage,
+  currentIndex: mainmenuController.selectedIndex.value,
+  items: const [
+    BottomNavigationBarItem(
+      icon: Icon(Icons.home_outlined),
+      label: "Home",
+    ),
+    BottomNavigationBarItem(
+      icon: Icon(Icons.table_chart_outlined),
+      label: "Table",
+    ),
+    BottomNavigationBarItem(
+      icon: Icon(Icons.history),
+      label: "History",
+    ),
+    BottomNavigationBarItem(
+      icon: Icon(Icons.notification_add_outlined),
+      label: "Notif",
+    ),
+    BottomNavigationBarItem(
+      icon: Icon(Icons.person_2_outlined),
+      label: "Profile",
+    ),
+  ],
+),
+
       ),
     );
   }

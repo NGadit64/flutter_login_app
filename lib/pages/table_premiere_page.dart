@@ -7,7 +7,7 @@ class TablePremierePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final controller = Get.find<TablePremiereController>();
+    final controller = Get.put(TablePremiereController());
 
     return Scaffold(
       appBar: AppBar(title: const Text("Table Premiere")),
@@ -26,17 +26,26 @@ class TablePremierePage extends StatelessWidget {
             itemBuilder: (context, index) {
               final team = controller.tableStandings[index];
               return Card(
-                child: ListTile(
-                  leading: CircleAvatar(
-                    backgroundImage: NetworkImage(team.strBadge),
-                    radius: 25,
-                  ),
-                  title: Text(team.strTeam),
-                  subtitle: Text(
-                    "D: ${team.intDraw}  W: ${team.intWin}  L: ${team.intLoss}",
-                  ),
-                  trailing: Text(team.intPoints),
-                ),
+                 child:
+                //   ListTile(
+                //   leading: CircleAvatar(
+                //     backgroundImage: NetworkImage(team.strBadge),
+                //     radius: 25,
+                //   ),
+                //   title: Text(team.strTeam),
+                //   subtitle: Text(
+                //     "D: ${team.intDraw}  W: ${team.intWin}  L: ${team.intLoss}",
+                //   ),
+                //   trailing: Text(team.intPoints),
+                // ),
+          ListTile(
+          leading: CircleAvatar(
+    backgroundImage: NetworkImage(team.strBadge),
+              ),
+             title: Text(team.strTeam),
+            subtitle: Text(team.strStadium ?? "-"),
+            )
+
               );
             },
           ),
